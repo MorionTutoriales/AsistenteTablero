@@ -1,0 +1,5 @@
+# ninja log v5
+2	134	7324205026876983	FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o	11d1833a585969ef
+135	306	7324205028003723	D:/Proyectos/Unity/Asistente de Tablero/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/5l4b5z1o/obj/arm64-v8a/libswappywrapper.so	6f94ed7a3260d33e
+1	278	7327744157435673	FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o	11d1833a585969ef
+278	507	7327744159469979	D:/Proyectos/Unity/Asistente de Tablero/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/5l4b5z1o/obj/arm64-v8a/libswappywrapper.so	6f94ed7a3260d33e

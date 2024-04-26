@@ -1,0 +1,5 @@
+D:/Proyectos/Unity/Asistente de Tablero/.utmp/RelWithDebInfo/5l4b5z1o/armeabi-v7a/CMakeFiles/edit_cache.dir
+D:/Proyectos/Unity/Asistente de Tablero/.utmp/RelWithDebInfo/5l4b5z1o/armeabi-v7a/CMakeFiles/rebuild_cache.dir
+D:/Proyectos/Unity/Asistente de Tablero/.utmp/RelWithDebInfo/5l4b5z1o/armeabi-v7a/FramePacing/CMakeFiles/swappywrapper.dir
+D:/Proyectos/Unity/Asistente de Tablero/.utmp/RelWithDebInfo/5l4b5z1o/armeabi-v7a/FramePacing/CMakeFiles/edit_cache.dir
+D:/Proyectos/Unity/Asistente de Tablero/.utmp/RelWithDebInfo/5l4b5z1o/armeabi-v7a/FramePacing/CMakeFiles/rebuild_cache.dir
