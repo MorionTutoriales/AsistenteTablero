@@ -17,5 +17,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Basta.unity
     guid: e9174d697ba263c41b85ebe50eb4e68c
+  - enabled: 1
+    path: Assets/Scenes/Selector.unity
+    guid: 780d9215148db6743a32dfea6db33641
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
