@@ -23,7 +23,7 @@ public class RetoDisplayRuleta : MonoBehaviour
 
         while (tiempoTranscurrido < duracion)
         {
-            if (retoManager != null && retoManager.RetosDisponibles() > 0)
+            if (retoManager != null)
             {
                 string retoRandom = retoManager.ObtenerRetoAlAzarSinEliminar();
                 retoText.text = retoRandom;

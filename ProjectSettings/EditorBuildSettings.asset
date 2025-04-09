@@ -14,5 +14,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Serpientes.unity
     guid: d2d4c6fd51d2501409cff4e6f8b2b75f
+  - enabled: 1
+    path: Assets/Scenes/Basta.unity
+    guid: e9174d697ba263c41b85ebe50eb4e68c
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0

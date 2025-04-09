@@ -1,31 +1,28 @@
 using System.Collections.Generic;
-using System.IO;
 using UnityEngine;
 
 public class RetoManager : MonoBehaviour
 {
-    public string fileName = "retos_basta_final.txt"; // Nombre del archivo en StreamingAssets
+    public TextAsset archivoDeRetos; // Asigna el .txt desde el inspector
 
     public List<string> retos = new List<string>();
 
     void Start()
     {
-        CargarRetosDesdeArchivo();
+        CargarRetosDesdeTextAsset();
     }
 
-    void CargarRetosDesdeArchivo()
+    void CargarRetosDesdeTextAsset()
     {
-        string ruta = Path.Combine(Application.streamingAssetsPath, fileName);
-
-        if (File.Exists(ruta))
+        if (archivoDeRetos != null)
         {
-            string[] lineas = File.ReadAllLines(ruta);
+            string[] lineas = archivoDeRetos.text.Split(new[] { '\r', '\n' }, System.StringSplitOptions.RemoveEmptyEntries);
             retos = new List<string>(lineas);
-            Debug.Log($"Se cargaron {retos.Count} retos.");
+            Debug.Log($"Se cargaron {retos.Count} retos desde TextAsset.");
         }
         else
         {
-            Debug.LogError("No se encontró el archivo: " + ruta);
+            Debug.LogError("No se asignó ningún archivo de retos.");
         }
     }
 
@@ -42,23 +39,19 @@ public class RetoManager : MonoBehaviour
         return reto;
     }
 
-    [ContextMenu("Lanzar en consola")]
-    public void LanzarEnConsola()
+    public string ObtenerRetoAlAzarSinEliminar()
     {
-        print(ObtenerRetoAleatorio());
+        if (retos.Count == 0)
+        {
+            return "Sin retos disponibles";
+        }
+
+        int indice = Random.Range(0, retos.Count);
+        return retos[indice];
     }
 
     public int RetosDisponibles()
     {
         return retos.Count;
-    }
-
-    public string ObtenerRetoAlAzarSinEliminar()
-    {
-        if (retos.Count == 0)
-            return "Sin retos disponibles";
-
-        int indice = Random.Range(0, retos.Count);
-        return retos[indice];
     }
 }
